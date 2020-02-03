@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  
+ <div id= "gridBig">  
+      <!-- this is the big layout for everything on this page but it might be part of a page so I'm giving it its own id.  -->
+
+
+      <!-- 3 divs for 3 buttons.  No CSS assigned to them.  -->
+    <!-- <div id="startButton">
+          <button id="start"  class="button1" onclick="startUp();">Start</button> 
+    </div> -->
+    
+    <div>
+            <button id="first5"  class="button1"  onclick="setToFirst5()">Facts 1-5</button>
+    </div>
+    <div>
+            <button id="sixThru10"  class="button1"  onclick="setToHigh5();">Facts 6-10 </button>
+    </div><div>
+            <button id="all10"  class="button1"   onclick="setToAll10();">Facts 1-10</button>
+    </div>
+<div>
+          <button id="startFact"  class="button1" disabled="true" onclick="startUp();">Start fact over</button> </div>
+    <div>
+            <button id="reset"  class="button1" disabled="true" onclick="startOver();">Start All over</button>
+    </div>
+<!-- This is where the visual representation goes.  It can take various forms. Javascript will populate it. -->
+    <section id="multPic" class="centerMult"  >
+    </section>
+
+<!-- this div is just so I can write test text to see if something ran. -->
+    <div class="testText">   <p id="p1"><p>      </div>
+
+ <!-- The area where user will enter the first answers.  -->
+    <div class="inputPlace" id="Q1">
+      <!-- the  text asking the question -->
+       <div id ="directions">
+       </div>
+       <!-- the actual expression including the input from the user -->
+       <div id="factor2">         <input type="number" id="factor" placeholder="??" maxlength="2" autofocus  > 
+        </div>
+      
+      </div>
+
+<!-- The div for the button to check the answer to the first part.  -->
+
+    <div   class="checkAnswer"> 
+         <button id="check1"  class="button1" disabled="false" onclick="checkName()"">Check Answer </button>
+    </div>
+      
+      <!-- The div for the answer to the second part.  I will also make a version where this is all in one thing.   -->
+    <div class="inputPlace"  id="A1">         
+           2 x   = <input type="number" id="multAnswer" size="1" maxlength="2" /> 
+    </div>
+      <!-- the div for the button to check the answer -->
+    <div class="checkAnswer">
+         <button id="check2" disabled=true; class="button1"  onclick="checkAnswer();">check Answer</button>
+    </div>
+      <!-- Feedback -- right or wrong?  -->
+    <div class="feedbackDiv" id="feedback"></div>
+        
+    </div>
+    <!-- another diagnostic div -->
+    <div>          <p id="p3"></p>       </div>
+
+ 
+<!-- Script 2 is the population of the div with the pictures.   If it's in the same script then I couldn't change its properties in the javaScript.  -->
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
