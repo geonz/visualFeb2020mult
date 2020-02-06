@@ -199,7 +199,7 @@ else
   // else    
   //  // need a "next fact" or HERE IS WHERE TO CHANGE IT TO ADD ONE!!! 
   //   {
-       factNum+=4;
+       factNum+=1;
     feedback.innerHTML="That's right - try the next one!" ; 
     nextOne.disabled=false;
 // newFact();
