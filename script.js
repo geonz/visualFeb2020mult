@@ -90,6 +90,7 @@ else
       factor2.innerHTML= factSet + " x " + '<input type="number" id="factor" size="1" maxlength="2"/>' + " = " + '<input type="number" id="multAnswer1" size = "1" maxlength="3"/> ';
      
     }
+    nextOne.disabled=true;
 // here's where we create the number chart and then shade in the multiples of the fact. 
 createMultImage();
 }
