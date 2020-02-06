@@ -14,7 +14,7 @@ function changeMultiples(selectorStr, oldColor, bgColor) {
 }
   
    
-   //  make hitting enter like clicking "check answer."  Except it doesn't work anymore. I tried moving it to the beginning as well as moving it here. It used to work. we'll see what happens when we go online with it. 
+   //  make hitting enter like clicking "check answer."  Except it doesn't work anymore. I tried moving it to the beginning as well as moving it here. I *think* it's a "needs to be its own script" thing.
 var input = document.getElementById("factor");
 input.addEventListener("keyup", function(event)
  {

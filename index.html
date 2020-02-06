@@ -7,8 +7,9 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-  
+  <h1>Times Tables Practice In Order: <br>  Identify the fact and its answer. </h1>
  <div id= "gridBig">  
+   <h2>You should know the zeroes and ones; let's start with the tens here.</h2>  
       <!-- this is the big layout for everything on this page but it might be part of a page so I'm giving it its own id.  -->
 
 
@@ -25,17 +26,17 @@
     </div><div>
             <button id="all10"  class="button1"   onclick="setToAll10();">Facts 1-10</button>
     </div>
-<div>
-          <button id="startFact"  class="button1" disabled="true" onclick="startUp();">Start fact over</button> </div>
-    <div>
-            <button id="reset"  class="button1" disabled="true" onclick="startOver();">Start All over</button>
-    </div>
+
 <!-- This is where the visual representation goes.  It can take various forms. Javascript will populate it. -->
     <section id="multPic" class="centerMult"  >
     </section>
 
 <!-- this div is just so I can write test text to see if something ran. -->
-    <div class="testText">   <p id="p1"><p>      </div>
+    <div class="testText"> <div>
+          <button id="startFact"  class="button1" disabled="true" onclick="startUp();">Start fact over</button> </div>
+    <div>
+            <button id="reset"  class="button1" disabled="true" onclick="startOver();">Start All over</button>
+    </div>  <p id="p1"><p>      </div>
 
  <!-- The area where user will enter the first answers.  -->
     <div class="inputPlace" id="Q1">
