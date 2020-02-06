@@ -47,7 +47,8 @@ function nextFact()
     factIndex++;  
     factSet=factSequence[factIndex];
     p1.innerHTML="next fact is" + factSet;
-    startUp();
+    startUp(); 
+    // THIS TAKES   us to a new fact to practice. 
 }
 
 // this displays the first fact in whatever set you are on; so if you want to start the fact you're on over, it will do that. Also works at beginning. 
@@ -155,6 +156,7 @@ if (factNum <=maxFact)
     }
   }
 }
+// so first it does this and if it's right it checks the ansewr w/ no input from user. 
 function checkName(picNum)
 {
 var b = factor.value;
@@ -194,10 +196,10 @@ else
           
           // }
   // else    
-  //  // need a "next fact" or 
+  //  // need a "next fact" or HERE IS WHERE TO CHANGE IT TO ADD ONE!!! 
   //   {
        factNum+=4;
-    feedback.innerHTML="That's right - try the next one!  factnum is now " + factNum;
+    feedback.innerHTML="That's right - try the next one! "
 newFact();
     // go to the next one.   
   }
