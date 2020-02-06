@@ -88,6 +88,7 @@ else
         // p1.innerHTML="fact number  is: " + factNum;  
         // now type the question in for this fact, with the input box.
       factor2.innerHTML= factSet + " x " + '<input type="number" id="factor" size="1" maxlength="2"/>' + " = " + '<input type="number" id="multAnswer1" size = "1" maxlength="3"/> ';
+      feedback.innerHTML="";
      
     }
     nextOne.disabled=true;
