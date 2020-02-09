@@ -140,6 +140,15 @@ function pickImage(factSet)
     imgsrc='<img src= images/icon10.png alt="10 dots like a domino" style="min-height:50px;  max-width:100%;max-height:100%; ">';
     break;
   }
+  default:
+  {imgsrc='<img src= images/dominoIconEmpty.png alt="blank space" style="min-height:50px;  max-width:100%;max-height:100%; ">';
+  multPicHTML +='<div>'+ imgsrc + '</div>';
+      // now make it the HTML
+    multPic.innerHTML=multPicHTML;
+    break;
+
+  }
+  // Okay, we should have one blank one in there or ten blank ones in there as the default
 }
 }
 
