@@ -1,8 +1,9 @@
-/* div
+div
 {
   border: #4CA450;
   border-style: dotted;
-} */
+  min-height: 30px;
+}
  .button1 
 {font-size: 15px;
   border-radius: 12px;

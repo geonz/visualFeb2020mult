@@ -27,10 +27,13 @@ function setToHigh5()
 }
 function setToFirst5()
 {  minFact = 1;
-   maxFact=5;
-   first5.disabled=true;
-   sixThru10.disabled=true;
-   all10.disabled=true;
+    maxFact=5;
+    first5.style.display= "none";
+    sixThru10.style.display="none";
+    all10.style.display="none";
+  //  first5.disabled=true;
+  //  sixThru10.disabled=true;
+  //  all10.disabled=true;
    startUp();
 }
 function setToAll10()

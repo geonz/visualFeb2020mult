@@ -23,9 +23,14 @@
     
     <div>
             <button id="first5"  class="button1"  onclick="setToFirst5()">Facts 1-5</button>
+            <button id="startFact"  class="button1" disabled="true" onclick="startUp();">Start fact over</button>
+             
     </div>
     <div>
             <button id="sixThru10"  class="button1"  onclick="setToHigh5();">Facts 6-10 </button>
+<!-- 
+            Here's the button to show up after we start.  -->
+            <button id="reset"  class="button1" disabled="true" onclick="startOver();">Start All over</button>
     </div><div>
             <button id="all10"  class="button1"   onclick="setToAll10();">Facts 1-10</button>
     </div>
@@ -36,13 +41,8 @@
       </div>
       <!-- <img src= images/dominoIconEmpty.png alt="blank space" style="min-height:50px;  max-width:100%;max-height:100%; "> -->
     </section>
-
-<!-- this div is just so I can write test text to see if something ran. -->
-    <div class="testText"> <div>
-          <button id="startFact"  class="button1" disabled="true" onclick="startUp();">Start fact over</button> </div>
-    <div>
-            <button id="reset"  class="button1" disabled="true" onclick="startOver();">Start All over</button>
-    </div>  <p id="p1"><p>      </div>
+       
+        
 
  <!-- The area where user will enter the first answers.  -->
     <div class="inputPlace" id="Q1">
@@ -61,14 +61,14 @@
          <button id="check1"  class="button1" disabled="false" onclick="checkName()"">Check Answer  </button>
     </div>
       
-      <!-- The div for the answer to the second part.  I will also make a version where this is all in one thing.   -->
+   
     <div class="inputPlace"  id="A1">         
            2 x   = <input type="number" id="multAnswer" size="1" maxlength="2" /> 
     </div>
       <!-- the div for the button to check the answer -->
-    <div class="checkAnswer">
+    <!-- <div class="checkAnswer">
         
-    </div>
+    </div> -->
       <!-- Feedback -- right or wrong?  -->
     <div class="feedbackDiv" id="feedback"> 
       </div>
@@ -78,7 +78,7 @@
         
     </div>
     <!-- another diagnostic div -->
-    <div>          <p id="p3"></p>       </div>
+   
 
  
 <!-- Script 2 is the population of the div with the pictures.   If it's in the same script then I couldn't change its properties in the javaScript.  -->
