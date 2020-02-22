@@ -33,7 +33,9 @@
             <button id="reset"  class="button1" disabled="true" onclick="startOver();">Start All over</button>
     </div><div>
             <button id="all10"  class="button1"   onclick="setToAll10();">Facts 1-10</button>
+            <p id="p1"></p>
     </div>
+    
 
 <!-- This is where the visual representation goes.  It can take various forms. Javascript will populate it. -->
     <section id="multPic" class="centerMult"  > <div>
@@ -70,10 +72,12 @@
         
     </div> -->
       <!-- Feedback -- right or wrong?  -->
-    <div class="feedbackDiv" id="feedback"> 
+    <div class="feedbackDiv" > 
+      <p id="feedback"></p> 
+       <button id="nextOne" disabled="true" ; class="button1"  onclick="newFact();">Next Fact</button>
       </div>
      <div class="feedbackDiv" id="nextFactButton">
-      <button id="nextOne" disabled="true" ; class="button1"  onclick="newFact();">Next Fact</button>
+     
        </div>
         
     </div>

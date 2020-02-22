@@ -1,8 +1,8 @@
 div
 {
-  border: #4CA450;
+  /* border: #4CA450;
   border-style: dotted;
-  min-height: 30px;
+  min-height: 30px; */
 }
  .button1 
 {font-size: 15px;
@@ -16,7 +16,18 @@ div
   margin: 15px;
 
 }
-  
+  #feedback
+  {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #nextOne
+  {
+   margin-left:40px;
+   /* background-color: bisque; */
+
+  }
 .button1:disabled {opacity: 0;}
 
 body {

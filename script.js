@@ -81,6 +81,7 @@ function startOver()
 function newFact()
 // first make sure we're only going to ten. 
 {
+ 
   if (factNum>maxFact)
   {
   p1.innerHTML= "you're done!" +'<button id="check1" class="button1" onclick="nextFact();">Next Fact</button>';
@@ -95,6 +96,7 @@ else
      
     }
     nextOne.disabled=true;
+    check1.disabled=false;
 // here's where we create the number chart and then shade in the multiples of the fact. 
 createMultImage();
 }
@@ -212,9 +214,10 @@ else
   // else    
   //  // need a "next fact" or HERE IS WHERE TO CHANGE IT TO ADD ONE!!! 
   //   {
-       factNum+=1;
+        factNum+=1;
     feedback.innerHTML="That's right - try the next one!" ; 
     nextOne.disabled=false;
+    check1.disabled=true;
 // newFact();
     // go to the next one.   
   }
